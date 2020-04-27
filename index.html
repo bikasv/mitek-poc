@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MiSnap demo</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header class="header">Capture image</header>
+
+		<div class="result-container">
+			<p id="error" hidden>Failed to capture</p>
+
+			<span id="placeholder"></span>
+			<button id="reset" hidden onclick="reset()"></button>
+			<img id="captured" alt="" src="" hidden />
+		</div>
+
+		<div class="control-container">
+			<button class="capture-btn" onclick="setupCapture('SELFIE', 'AUTO_CAPTURE')">Autocapture Selfie</button>
+			<button class="capture-btn" onclick="setupCapture('PASSPORT', 'AUTO_CAPTURE')">Autocapture Passport</button>
+
+			<button class="capture-btn" onclick="setupCapture('SELFIE', 'MANUAL_CAPTURE')">Manual Selfie</button>
+			<button class="capture-btn" onclick="setupCapture('PASSPORT', 'MANUAL_CAPTURE')">Manual Passport</button>
+		</div>
+
+		<script src="./mitek-science-sdk.js"></script>
+		<script src="./snap.js"></script>
+	</body>
+</html>
