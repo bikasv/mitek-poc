@@ -20,11 +20,12 @@
 
 .control-container {
 	overflow: hidden;
-	padding: 0 40px;
+	margin-top: 10px;
+	padding: 0 30px;
 }
 
 .result-container #captured {
-	width: calc(100vw - 80px);
+	width: calc(100vw - 120px);
 }
 
 #reset {
@@ -34,11 +35,11 @@
 	color: var(--white);
 	cursor: pointer;
 	height: 48px;
-	margin-top: -16px;
+	margin-top: -12px;
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
-	right: 16px;
+	right: 40px;
 	width: 48px;
 }
 
@@ -53,8 +54,8 @@
 #placeholder {
 	border: 2px solid var(--primary-color);
 	display: inline-block;
-	height: calc((100vw - 120px) * 16 / 9);
-	width: calc(100vw - 80px);
+	height: calc((100vw - 120px) * 4 / 3);
+	width: calc(100vw - 120px);
 }
 
 .hidden {
@@ -64,6 +65,7 @@
 .capture-btn {
 	background: var(--primary-color);
 	border: 0;
+	border-radius: 12px;
 	color: var(--white);
 	margin-bottom: 10px;
 	padding: 16px;

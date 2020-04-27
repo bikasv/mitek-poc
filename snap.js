@@ -57,6 +57,7 @@ function setupCapture (docType, mode) {
     console.log('result: ', result);
     const { response } = result;
     const img = document.querySelector('#captured');
+    img.src = '';
 
     if (response.status === 'success') {
       img.src = response.imageData;
