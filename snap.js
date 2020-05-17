@@ -95,12 +95,15 @@ function setupCapture (docType, mode) {
       }
 
       if (recentHint !== null) {
-        mitekScienceSDK.cmd('SHOW_HINT',
-        docTypeHints[recentHint]);
+        mitekScienceSDK.cmd('SHOW_HINT', docTypeHints[recentHint]);
       }
     } else {
       if (recentHint !== null) {
-        if (key == 'MITEK_ERROR_FOUR_CORNER' || key == 'MITEK_ERROR_GLARE') {
+        if (key === 'MITEK_ERROR_FOUR_CORNER'
+          || key === 'MITEK_ERROR_GLARE'
+          || key === 'MITEK_ERROR_TOO_DARK'
+          || key === 'MITEK_ERROR_FOCUS'
+        ) {
           mitekScienceSDK.cmd('SHOW_HINT', docTypeHints[recentHint]);
         } else {
           recentHint = null;

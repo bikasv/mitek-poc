@@ -1,0 +1,4 @@
+# Disabling Mitek SDK as it's public repo
+/mitekSDK
+/mitek-science-sdk.js
+/images
